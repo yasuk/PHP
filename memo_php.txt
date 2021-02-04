@@ -705,7 +705,7 @@ private function create_xml( $func_id, $datas ) {
 	$dom->appendChild( $root_elm );
 
 	// childの作成
-	$child_elm = $this->append_child_elements_to_xml( $dom, $root_elm, $datas );
+	$this->append_child_elements_to_xml( $dom, $root_elm, $datas );
 
 	$xml = $dom->saveXML();
 
